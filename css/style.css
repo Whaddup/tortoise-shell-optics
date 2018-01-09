@@ -31,13 +31,25 @@ background-color: cadetblue;
 
 .header_logo_box {border: 1px black solid;
 display: flex;
-flex-grow: 1.5;
-align-items: center;
+flex-grow: 1;
 }
+
+.header_logo {margin-right: 1rem;
+  display: flex;
+  align-items: center;}
 
 .header_logo img {height: 1.5rem;}
 
-nav.header_links {border: dashed yellow 3px;}
+.header_logo_text {color: white;
+  display: flex;
+  align-items: center;}
+
+nav.header_links {border: dashed black 1px;}
+
+.header_links span {color: white;}
+
+#products {margin-left: 2rem;
+margin-right: 2rem;}
 
 .large_caption {border: 5px blue solid;
 height: 26rem;
@@ -54,12 +66,16 @@ padding: 1.5rem 5rem;
 background-color: white;
 text-transform: uppercase;}
 
+.large_caption_inside h1 {font-weight: bold;
+font-size: 2rem;
+line-height: 1.2;}
+
 .first_midpiece_container {border: red solid 5px;
 display: flex;
 flex-direction: column;
 align-items: center;}
 
-.icons_container {border: black solid 5px;
+.icons_container {border: black dotted 1px;
   width: 960px;
   height: 8rem;
 display: flex;
@@ -81,8 +97,11 @@ display: block;
 margin: auto;}
 
 .icon_caption_paper {border: 1px solid black;
-text-align: center;
-margin-top: 34px;}
+margin-top: 34px;
+display: flex;
+justify-content: center;}
+
+.icon_caption_paper span {text-align: center;}
 
 .icon_image img {width: 5rem;
 }
@@ -96,7 +115,7 @@ display: flex;
 justify-content: center;}
 
 
-.texts_container {border: 5px black dashed;
+.texts_container {border: 1px black dashed;
 width: 960px;
 display: flex;
 flex-direction: row;
@@ -115,12 +134,18 @@ padding-left: 1.25rem;
 width: 10rem;
 text-transform: uppercase;
 color: white;
-font-weight: bold;}
+font-weight: bold;
+padding: 0.5rem 1.25rem;
+}
 
 .texts_caption {border: black 1px solid;
 }
 
-.appointments {margin-left: 5%;}
+/* .box1, .box2 {border: 1px red solid;} */
+
+
+.philosophy {padding-right: 5%;}
+.appointments {padding-right: 5%;}
 
 footer {border: 1px dotted red;
 width: 960px;
@@ -132,4 +157,4 @@ background-color: azure;
 
 .footer_image img {height: 1.5rem;}
 
-.footer_text_container span {font-weight: bold;}
+.footer_text_container {margin-left: 1rem;}
