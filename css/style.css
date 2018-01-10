@@ -1,7 +1,9 @@
+/*HTML*/
 html {font-size: 18px;
 line-height: 1.4;
 font-family: helvetica;}
 
+/* HEADER AND MAIN BACKGROUND IMAGE*/
 .main_container {background-image: url("../images/glasses-bg.png");
 background-repeat: no-repeat;
 background-position: center;
@@ -12,15 +14,6 @@ display: flex;
 flex-direction: column;
 align-items: center;}
 
-
-/***
-header {border: black 10px solid;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-***/
-
 .header_main_container {display: flex;
 width: 888px;
 margin-top: 1rem;
@@ -29,8 +22,7 @@ background-color: cadetblue;
 }
 
 .header_logo_box {display: flex;
-flex-grow: 1;
-}
+flex-grow: 1;}
 
 .header_logo {margin-right: 1rem;
   display: flex;
@@ -49,12 +41,11 @@ margin-right: 2rem;}
 
 #display_420_only  {display: none;}
 
+/*FOR LARGE PICTURE AND "DON'T JUST LOOK, SEE" */
 .large_caption {height: 26rem;
 width: 1032px;
 display: flex;
-justify-content: flex-end;
-border: 2px black solid;
-  }
+justify-content: flex-end;  }
 
 .large_caption_inside {margin-top: 10rem;
 max-height: 5rem;
@@ -62,25 +53,33 @@ padding: 1.5rem 5rem;
 background-color: white;
 text-transform: uppercase;
 display: flex;
-align-items: center;
-border: red solid 2px;}
+align-items: center;}
 
 .large_caption_inside span {font-weight: bold;
 font-size: 2rem;
-line-height: 1.2;}
+line-height: 1.2;
+}
 
 /* MEDIA INQUIRY- TABLET SIZE OF 1024PX */
 @media only screen and (max-width: 1024px) {
 .main_container {height: 22rem;}
 .header_main_container {margin-top: 0;
 width: 100%; }
+
+.large_caption {width: 100%;}
+
 .large_caption_inside { margin-top: 5rem;
   margin-right: 2rem;
-    padding: 0.75rem 4rem;}
-.large_caption_inside span {font-size: 1.33rem;}
+    padding: 0 4rem;
 }
 
-/* MEDIA INQUIRY - MOBILE SIZE OF 420PX */
+.large_caption_inside span {font-size: 1.33rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;}
+}
+/* END OF MEDIA QUERY FOR 1024PX TABLET FORMAT */
+
+/* MEDIA QUERY - MOBILE SIZE OF 420PX - FOR HEADER AND LARGE PICTURE IMMEDIATELY UNDER HEADER */
 @media only screen and (max-width: 420px) {
 
 .main_container {background-position: 20%;
@@ -99,18 +98,17 @@ align-items: center;
 .large_caption {width: 100%;}
 
 .large_caption_inside {margin-top: 9rem;
-width: 420px;
-padding-top: 1rem;
-padding-bottom: 1rem;
+width: 100%;
+height: 3rem;
+padding-top: 0px;
+padding-bottom: 0px;
 margin-right: 0px;}
 
-.large_caption_inside span {font-size: 1rem;}
-
+.large_caption_inside span {font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;}
 }
-
-
-
-/* OUT OF 420 */
+/* END OF MEDIA QUERY FOR 420PX MOBILE SITE */
 
 .bottom_piece_container {width: 100%;
 display: flex;
@@ -123,11 +121,8 @@ display: flex;
 justify-content: center;
 margin-top: 3rem;}
 
-
-/* MEDIA INQUIRY FOR 420 ICONS CONTAINER */
+/* MEDIA QUERY FOR 420PX - FOR MIDDLE SECTION OF THE SITE WITH TRUCK, RULER AND PAPER LOGOS */
 @media only screen and (max-width: 420px) {
-
-/* Added this change to fix height */ .large_caption {width: 100%;}
 
 .icons_container {display: flex;
 flex-direction: column;
@@ -141,10 +136,10 @@ margin-bottom: 1.54rem;}
 
 .icon_caption_paper span, .icon_caption {font-size: 0.77rem;}
 }
+/* END OF MEDIA QUERY FOR 420PX MOBILE MODE */
 
 
-/* OUT OF 420 */
-
+/* FOR MIDDLE PORTION OF WEBSITE - IN OTHER WORDS, THE SECTION WITH THE TRUCK, PAPER AND RULER IMAGES */
 .individual_icon_container {width: 5rem;}
 
 .ruler {margin-left: 6rem;
@@ -172,7 +167,6 @@ justify-content: center;}
 display: flex;
 justify-content: center;}
 
-
 .texts_container {width: 960px;
 display: flex;
 flex-direction: row;
@@ -197,10 +191,7 @@ padding: 0.5rem 1.25rem;
 
 .appointments {padding-right: 5%;}
 
-
-
-/* INTO 420  PHILOSOPHY AND APPOINTMENTS */
-
+/* MEDIA QUERY FOR 420PX - PHILOSOPHY AND APPOINTMENTS SECTION */
 @media only screen and (max-width: 420px) {
 
 .texts_container {display: flex;
@@ -223,10 +214,7 @@ padding-right: 0px;}
 #caption_philosophy_420px p {margin-bottom: 4rem;}
 }
 
-
-
 /* FOOTER */
-
 footer {width: 960px;
 margin-top: 5rem;
 padding: 4rem 4rem;
@@ -238,12 +226,11 @@ background-color: azure;
 
 .footer_text_container {margin-left: 1rem;}
 
-
+/*MEDIA QUERY FOR FOOTER ON 420PX MOBILE FORMAT*/
 @media only screen and (max-width: 420px) {
 footer {width:100%;
 display: flex;
 justify-content: center;}
 
 #footer_text_420px {display: none;}
-
 }
