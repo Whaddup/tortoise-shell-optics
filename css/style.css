@@ -2,8 +2,7 @@ html {font-size: 18px;
 line-height: 1.4;
 font-family: helvetica;}
 
-.main_container {border: 5px orange solid;
-background-image: url("../images/glasses-bg.png");
+.main_container {background-image: url("../images/glasses-bg.png");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -23,15 +22,13 @@ align-items: center;
 ***/
 
 .header_main_container {display: flex;
-  border: 5px red dotted;
 width: 888px;
 margin-top: 1rem;
 padding: 1rem 2rem;
 background-color: cadetblue;
 }
 
-.header_logo_box {border: 1px black solid;
-display: flex;
+.header_logo_box {display: flex;
 flex-grow: 1;
 }
 
@@ -45,8 +42,6 @@ flex-grow: 1;
   display: flex;
   align-items: center;}
 
-nav.header_links {border: dashed black 1px;}
-
 .header_links span {color: white;}
 
 #products {margin-left: 2rem;
@@ -54,21 +49,21 @@ margin-right: 2rem;}
 
 #display_420_only  {display: none;}
 
-.large_caption {border: 5px blue dotted;
-height: 26rem;
+.large_caption {height: 26rem;
 width: 1032px;
 display: flex;
 justify-content: flex-end;
+border: 2px black solid;
   }
 
-.large_caption_inside {border: 3px solid red;
-margin-top: 10rem;
+.large_caption_inside {margin-top: 10rem;
 max-height: 5rem;
 padding: 1.5rem 5rem;
 background-color: white;
 text-transform: uppercase;
 display: flex;
-align-items: center;}
+align-items: center;
+border: red solid 2px;}
 
 .large_caption_inside span {font-weight: bold;
 font-size: 2rem;
@@ -117,14 +112,12 @@ margin-right: 0px;}
 
 /* OUT OF 420 */
 
-.bottom_piece_container {border: red solid 2px;
-  width: 100%;
+.bottom_piece_container {width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;}
 
-.icons_container {border: black dotted 1px;
-  width: 960px;
+.icons_container {width: 960px;
   height: 8rem;
 display: flex;
 justify-content: center;
@@ -152,9 +145,7 @@ margin-bottom: 1.54rem;}
 
 /* OUT OF 420 */
 
-.individual_icon_container {border: red dashed 2px;
-width: 5rem;
-}
+.individual_icon_container {width: 5rem;}
 
 .ruler {margin-left: 6rem;
 margin-right: 6rem;}
@@ -166,8 +157,7 @@ justify-content: center;}
 display: block;
 margin: auto;}
 
-.icon_caption_paper {border: 1px solid black;
-margin-top: 34px;
+.icon_caption_paper {margin-top: 34px;
 display: flex;
 justify-content: center;}
 
@@ -176,39 +166,31 @@ justify-content: center;}
 .icon_image img {width: 5rem;
 }
 
-.icon_image {border: black solid 1px;
-height: 6rem;}
+.icon_image {height: 6rem;}
 
-.icon_caption {border: black solid 1px;
-  text-align: center;
+.icon_caption {text-align: center;
 display: flex;
 justify-content: center;}
 
 
-.texts_container {border: 5px green dashed;
-width: 960px;
+.texts_container {width: 960px;
 display: flex;
 flex-direction: row;
 justify-content: center;
 }
 
-.texts_individual_container {border: yellow 5px solid;
-width: 35%;
+.texts_individual_container {width: 35%;
 display: flex;
 flex-direction: column;
 margin-top: 3rem;}
 
-.texts_label {border: black 1px solid;
-background-color: cadetblue;
+.texts_label {background-color: cadetblue;
 padding-left: 1.25rem;
 width: 10rem;
 text-transform: uppercase;
 color: white;
 font-weight: bold;
 padding: 0.5rem 1.25rem;
-}
-
-.texts_caption {border: black 1px solid;
 }
 
 .philosophy {padding-right: 5%;}
@@ -245,8 +227,7 @@ padding-right: 0px;}
 
 /* FOOTER */
 
-footer {border: 1px dotted red;
-width: 960px;
+footer {width: 960px;
 margin-top: 5rem;
 padding: 4rem 4rem;
 display: flex;
