@@ -96,20 +96,27 @@ width: 100%; }
 .header_links span {display: none;}
 
 .header_links {display: flex;
-align-items: center;}
+align-items: center;
+}
 
 #display_420_only {display: inline;}
+
+/* .large-caption {width: 420px;} */
 
 .large_caption_inside {margin-top: 9rem;
 width: 100%;
 padding-top: 1rem;
 padding-bottom: 1rem;}
 
+.large_caption_inside span {font-size: 1rem;
+text-align: center;
+padding-left: 6rem;}
+
 }
 
 
 
-
+/* OUT OF 420 */
 
 .bottom_piece_container {border: red solid 2px;
   width: 100%;
@@ -123,6 +130,24 @@ align-items: center;}
 display: flex;
 justify-content: center;
 margin-top: 3rem;}
+
+
+/* MEDIA INQUIRY FOR 420 ICONS CONTAINER */
+@media only screen and (max-width: 420px) {
+
+.icons_container {display: flex;
+  flex-direction: column;
+align-items: center;
+height: 100%;
+margin-top: 3.77rem;
+margin-bottom: 3.77rem;}
+
+.individual_icon_container.ruler {margin-top: 1.54rem;
+margin-bottom: 1.54rem;}
+}
+
+
+
 
 .individual_icon_container {border: red dashed 2px;
 width: 5rem;
@@ -186,6 +211,10 @@ padding: 0.5rem 1.25rem;
 .philosophy {padding-right: 5%;}
 
 .appointments {padding-right: 5%;}
+
+
+
+/* FOOTER */
 
 footer {border: 1px dotted red;
 width: 960px;
