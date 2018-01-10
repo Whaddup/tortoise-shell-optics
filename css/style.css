@@ -88,8 +88,8 @@ width: 100%; }
 /* MEDIA INQUIRY - MOBILE SIZE OF 420PX */
 @media only screen and (max-width: 420px) {
 
-  .main_container {background-position: 20%;
-  height: 17rem;}
+.main_container {background-position: 20%;
+height: 17rem;}
 
 .header_logo_text {display: none;}
 
@@ -101,16 +101,15 @@ align-items: center;
 
 #display_420_only {display: inline;}
 
-/* .large-caption {width: 420px;} */
+.large_caption {width: 100%;}
 
 .large_caption_inside {margin-top: 9rem;
-width: 100%;
+width: 420px;
 padding-top: 1rem;
-padding-bottom: 1rem;}
+padding-bottom: 1rem;
+margin-right: 0px;}
 
-.large_caption_inside span {font-size: 1rem;
-text-align: center;
-padding-left: 6rem;}
+.large_caption_inside span {font-size: 1rem;}
 
 }
 
@@ -135,8 +134,10 @@ margin-top: 3rem;}
 /* MEDIA INQUIRY FOR 420 ICONS CONTAINER */
 @media only screen and (max-width: 420px) {
 
+/* Added this change to fix height */ .large_caption {width: 100%;}
+
 .icons_container {display: flex;
-  flex-direction: column;
+flex-direction: column;
 align-items: center;
 height: 100%;
 margin-top: 3.77rem;
@@ -235,8 +236,10 @@ padding-right: 0px;}
 
 .texts_label span {text-align: center;}
 
-}
+.texts_caption p {font-size: 0.77rem; }
 
+#caption_philosophy_420px p {margin-bottom: 4rem;}
+}
 
 
 
@@ -253,3 +256,13 @@ background-color: azure;
 .footer_image img {height: 1.5rem;}
 
 .footer_text_container {margin-left: 1rem;}
+
+
+@media only screen and (max-width: 420px) {
+footer {width:100%;
+display: flex;
+justify-content: center;}
+
+#footer_text_420px {display: none;}
+
+}
